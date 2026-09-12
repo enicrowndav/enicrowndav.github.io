@@ -1,0 +1,21 @@
+{
+  "name": "olanrewaju-eniade-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Professional portfolio of Olanrewaju Eniade — biostatistics, data science and health research.",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs dist",
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/test-browser.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "playwright": "^1.63.0"
+  }
+}
