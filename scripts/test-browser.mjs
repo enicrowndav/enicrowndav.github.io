@@ -78,7 +78,7 @@ try {
   assert.equal(await menu.getAttribute('aria-expanded'), 'false');
   record('Mobile menu', 'open, Escape, anchor navigation and automatic close');
 
-  for (const [filter, count] of [['methods', 4], ['infectious', 3], ['population', 4], ['all', 6]]) {
+  for (const [filter, count] of [['methods', 6], ['infectious', 3], ['population', 4], ['all', 6]]) {
     await page.locator(`[data-filter="${filter}"]`).click();
     assert.equal(await page.locator('.publication:visible').count(), count);
     assert.equal(await page.locator(`[data-filter="${filter}"]`).getAttribute('aria-pressed'), 'true');
@@ -162,7 +162,7 @@ try {
   await page.goto(pathToFileURL(path.join(root, 'index.html')).href, { waitUntil: 'load' });
   assert.equal(await page.locator('#enquiry-form').isVisible(), true);
   await page.locator('[data-filter="methods"]').click();
-  assert.equal(await page.locator('.publication:visible').count(), 4);
+  assert.equal(await page.locator('.publication:visible').count(), 6);
   record('Double-click local-file launch');
   assert.equal(errors.length, 0, `Browser console or HTTP errors: ${errors.join('; ')}`);
   record('Browser errors', 'zero page errors or failed asset responses');
