@@ -13,6 +13,6 @@ assert.equal((html.match(/<h1\b/g) || []).length, 1, 'One page title is required
 assert.equal((html.match(/class="publication"/g) || []).length, 6, 'Expected six selected publications');
 assert(!/TODO|Lorem ipsum|YOUR_DOMAIN|example\.com/.test(html), 'No placeholder copy in the live page');
 assert(html.includes('Nothing has been sent yet.'), 'Enquiry flow must disclose send status');
-assert(!html.includes('PhD'), 'Unconfirmed doctoral status must not be published');
+assert(html.includes('University of Portsmouth') && html.includes('PhD, Computing') && html.includes('Ongoing'), 'Confirmed ongoing PhD wording is required');
 assert(!(await readFile(path.join(root, 'dist/sitemap.xml'), 'utf8')).includes('undefined'));
 console.log('Content, local assets, anchors, publication count and build checks passed.');

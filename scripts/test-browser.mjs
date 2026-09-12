@@ -46,6 +46,11 @@ try {
   assert.equal(await page.locator('.publication:visible').count(), 6);
   assert.equal(await page.locator('#enquiry-form').isVisible(), true);
   assert.equal(await page.locator('.cv-link').isVisible(), false);
+  const academicFoundation = await page.locator('.education-card').innerText();
+  assert.match(academicFoundation, /University of Portsmouth[\s\S]*PhD, Computing[\s\S]*Ongoing/i);
+  assert.match(academicFoundation, /University of Ibadan[\s\S]*MSc, Biostatistics[\s\S]*BSc, Statistics/);
+  assert.match(academicFoundation, /ALISON, Ireland[\s\S]*Diploma in Statistics/);
+  assert(!/\b20\d{2}\b/.test(academicFoundation), 'Academic foundation must not display years');
   assert(await page.evaluate(() => [...document.images].every(image => image.complete && image.naturalWidth > 0)));
   assert(await page.evaluate(() => document.fonts.check('400 20px "Instrument Serif"') && document.fonts.check('400 20px "DM Sans"')));
   await page.screenshot({ path: path.join(artifacts, 'desktop-home.png'), fullPage: false });

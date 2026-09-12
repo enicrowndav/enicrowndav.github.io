@@ -14,6 +14,8 @@ Public profile content verified on 12 September 2026 and then reconciled with th
 | PIVOT | Statistician, May 2016–May 2018 |
 | Qualifications | MSc Biostatistics 2021 and BSc Statistics 2016, University of Ibadan; ALISON Diploma in Statistics 2012 |
 
+Per the user's explicit instruction on 12 September 2026, the public Academic Foundation card omits all years and adds an ongoing PhD in Computing at the University of Portsmouth. This current instruction supersedes the older DS-I Africa biography, which named a different university.
+
 The September 2023–September 2024 research-affiliate entry is an additional ORCID-supported appointment, not a conflicting CV entry. The CV lists eight-plus years in its summary; the site's ten-plus years is supported by the dated May 2016 career start and the LinkedIn introduction as of September 2026. The CV supplies additional project duties, awards, memberships, tools and relocation availability.
 
 The full CV is used as a private content source and is not included in the public repository or website. The source document remains unchanged on the user's computer.
