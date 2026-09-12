@@ -1,17 +1,33 @@
 # Content provenance
 
-Public profile content verified on 12 September 2026. No CV attachment was available during the initial build. The website therefore uses the public records below. Raw fetched records remain in the ignored `.research/` directory and are excluded from the site build.
+Public profile content verified on 12 September 2026 and then reconciled with the user-supplied `Olanrewaju_Eniade_UK_ATS_CV(1) (2).docx`. The supplied CV takes precedence where older public employment records differ. Raw fetched records and conversion notes remain in the ignored `.research/` directory and are excluded from the site build.
+
+## CV reconciliation
+
+| Item | Final portfolio content from supplied CV |
+| --- | --- |
+| IFAIN | Senior Data Scientist, April 2022–present |
+| IHVN CaPS | Programme Manager, May 2021–March 2022 |
+| Adeleke University | Adjunct Lecturer, 2020–2022; no ongoing teaching claim |
+| Dementia Research Unit | Co-Investigator and Biostatistician, part-time, January 2022–April 2023 |
+| University of Ibadan | Project Officer and Research Mentee, November 2019–April 2021; Assistant Statistician, part-time, July 2018–October 2019 |
+| PIVOT | Statistician, May 2016–May 2018 |
+| Qualifications | MSc Biostatistics 2021 and BSc Statistics 2016, University of Ibadan; ALISON Diploma in Statistics 2012 |
+
+The September 2023–September 2024 research-affiliate entry is an additional ORCID-supported appointment, not a conflicting CV entry. The CV lists eight-plus years in its summary; the site's ten-plus years is supported by the dated May 2016 career start and the LinkedIn introduction as of September 2026. The CV supplies additional project duties, awards, memberships, tools and relocation availability.
+
+The full CV is used as a private content source and is not included in the public repository or website. The source document remains unchanged on the user's computer.
 
 ## Identity, qualifications and career
 
 - User-supplied LinkedIn: https://linkedin.com/in/oeniade. Public indexed introduction describes a biostatistician and data scientist with 10+ years of experience.
-- User-supplied ORCID: https://orcid.org/0000-0001-7142-3818. Public API endpoints `/v3.0/0000-0001-7142-3818/person`, `/employments`, `/educations`, and `/works` were retrieved. Employment dates and role titles on the page follow the employment records. The education endpoint is empty; the BSc and MSc are supported by the biography and institutional profile.
+- User-supplied ORCID: https://orcid.org/0000-0001-7142-3818. Public API endpoints `/v3.0/0000-0001-7142-3818/person`, `/employments`, `/educations`, and `/works` were retrieved. Employment records supported the initial build and the additional research-affiliate role. The supplied CV subsequently corrected roles/dates listed above. The education endpoint is empty; qualifications are now supported directly by the CV.
 - IFAIN institutional profile: https://www.ifain.org/team-member/olanrewaju-eniade/. Supports Senior Data Manager, BSc Statistics, MSc Biostatistics, University of Ibadan, research interests, and previous institutional work.
-- The ORCID biography uses “Senior Data Scientist”; the employment record and IFAIN profile use “Senior Data Manager”. The career section uses the employment title, while the introduction describes the broader professional discipline.
-- Adjunct teaching from 2020 overlaps other roles, as listed on ORCID. Research affiliation at IHVN is explicitly September 2023–September 2024, not ongoing.
+- The ORCID biography and supplied CV use “Senior Data Scientist”; the older employment record and IFAIN profile use “Senior Data Manager”. The final career section follows the CV.
+- Adjunct teaching overlaps other roles and ends in 2022 according to the CV. Research affiliation at IHVN is explicitly September 2023–September 2024, not ongoing.
 - DS-I Africa 2023 conference biography: https://dsi-africa.org/dsi-3rd-consortium-meeting/biography/1104. Supports CAMRA data involvement, biostatistics teaching and disease modelling interests. An old doctoral-status statement has deliberately not been carried into the portfolio because no current CV or confirmation was supplied.
-- Tools: R, Python, Stata and SAS appear in ORCID keywords. SPSS, REDCap and KoboToolbox are supported by https://www.pivotssl.org/ and its public research/technology material. Service descriptions are proposed offerings consistent with these public areas of work; they are not claims about specific paid clients or delivered outcomes.
-- Public contact email: `eniadetreasure@gmail.com`, listed as the primary verified public email in ORCID. No postal address, personal phone number or private details have been included.
+- Tools: R, Stata, SQL, Python, SPSS, Power BI, REDCap and ODK are in the supplied CV. Service descriptions are proposed offerings consistent with the CV and public work; they are not claims about specific paid clients or delivered outcomes. Listed global institutions are programme funders/partners, not personal consulting clients or endorsements.
+- Public contact email: `eniadetreasure@gmail.com`, listed as the primary verified public email in ORCID and supplied in the CV. The webpage includes a city-level location and omits the personal phone number, home address, and referee details.
 - GitHub account: `enicrowndav`, identified through the locally authenticated Git Credential Manager account and verified against the public repositories.
 
 ## Portrait and design assets
@@ -38,8 +54,8 @@ All selected items have an explicit source establishing Eniade's authorship. Oth
 5. COVID-19 transmission risk (2022), DOI `10.1016/j.sciaf.2022.e01334`. ORCID and IFAIN.
 6. Propensity score methodology (2021), DOI `10.5539/ijsp.v10n3p154`. ORCID, IFAIN and publisher PDF.
 
-## To incorporate when supplied
+## Remaining optional personalisation
 
-- Current CV for any additional appointments, achievements, qualifications and a public download copy.
+- An explicitly approved public CV download, if desired. The current portfolio uses the CV as a private source only.
 - Preferred personal domain. Do not reuse an existing organisation's domain without the owner's instruction.
 - Any preferred updated portrait, service descriptions or public project highlights.

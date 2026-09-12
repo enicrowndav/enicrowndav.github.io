@@ -36,9 +36,9 @@ Visit `http://127.0.0.1:4173`. Stop the preview with Ctrl+C.
 
 `npm run build` applies the email, website URL and CV settings to the published files. When changing the source email for direct-file previews, also change the fallback address in `app.js` and `index.html`. The optional profile URL fields in the config are reference settings; the actual public profile links live in `index.html`.
 
-### Add a CV
+### Add a public CV only when approved
 
-The initial CV attachment was unavailable; there is no placeholder download. Put your approved public PDF at `assets/olanrewaju-eniade-cv.pdf` and set `cvPath` in `site.config.json` to that relative path. Rebuild to reveal the download link. Only place files intended for public access in `assets/`.
+Career titles, dates, qualifications, awards and memberships have been reconciled with the supplied CV, but the full document is kept private. To add an approved public copy later, place a reviewed PDF in `assets/`, set `cvPath` in `site.config.json`, and rebuild. Only place files intended for public access in `assets/`.
 
 ### Update the sharing image
 

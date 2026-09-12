@@ -6,5 +6,8 @@ dist/
 .env.*
 *.log
 *.tmp
+assets/olanrewaju-eniade-cv.pdf
+scripts/create-cv-pdf.mjs
+scripts/cv-print.html
 Thumbs.db
 .DS_Store

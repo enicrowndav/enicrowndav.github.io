@@ -21,7 +21,8 @@ The initial portfolio build was checked using local Google Chrome through Playwr
 ## Scope and limits
 
 - The enquiry builder prepares an email; it does not send email or collect messages on a server. Delivery by a visitor's email provider is outside this site's control.
-- Publication links and career content are supported by the sources in `CONTENT-SOURCES.md`. No current CV was available for reconciliation.
+- Publication links and career content are supported by the sources in `CONTENT-SOURCES.md`. The supplied CV takes precedence over older public records for conflicting role titles and dates.
+- The full CV is excluded from the public build and repository. The webpage uses selected professional details and the public email, while omitting the personal phone number, home address, and referee information.
 - Research project descriptions do not certify performance or clinical readiness.
 - Custom-domain DNS and HTTPS must be checked once the owner supplies the chosen domain.
 

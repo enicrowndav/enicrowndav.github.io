@@ -92,6 +92,8 @@ try {
   await submit.click();
   assert.equal(await page.locator('#enquiry-dialog').isVisible(), false);
   await page.locator('#enquiry-name').fill('   ');
+  await page.locator('#enquiry-email').fill('invalid-email');
+  assert.equal(await page.locator('#enquiry-email').evaluate(input => input.validity.typeMismatch), true);
   await page.locator('#enquiry-email').fill('alex@example.org');
   await page.locator('#enquiry-message').fill('A meaningful project');
   await submit.click();
@@ -115,6 +117,7 @@ try {
   await writeFile(path.join(artifacts, 'accessibility-dialog.json'), JSON.stringify(modalAudit.violations, null, 2));
   assert.equal(modalAudit.violations.length, 0, `Dialog accessibility: ${JSON.stringify(modalAudit.violations.map(v => ({ id: v.id, nodes: v.nodes.map(n => n.target) })))}`);
   await page.locator('#copy-enquiry').click();
+  await page.waitForFunction(() => document.querySelector('#enquiry-status').textContent.trim().length > 0);
   assert.match(await page.locator('#enquiry-status').innerText(), /copied|Copy was unavailable/);
   await page.keyboard.press('Escape');
   assert.equal(await page.locator('#enquiry-dialog').isVisible(), false);
@@ -122,6 +125,7 @@ try {
   record('Enquiry validation and preview', 'empty/whitespace rejection, safe text, encoded mailto, copy fallback, Escape and retained inputs');
 
   await page.locator('.copy-email').click();
+  await page.waitForFunction(() => document.querySelector('.copy-status').textContent.trim().length > 0);
   assert.match(await page.locator('.copy-status').innerText(), /copied|select and copy/);
   record('Copy contact email');
 
