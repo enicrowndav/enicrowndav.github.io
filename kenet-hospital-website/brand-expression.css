@@ -1,0 +1,38 @@
+@font-face{font-family:"Bricolage Grotesque";src:url("assets/fonts/bricolage-400.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Bricolage Grotesque";src:url("assets/fonts/bricolage-500.ttf") format("truetype");font-weight:500;font-display:swap}
+@font-face{font-family:"Bricolage Grotesque";src:url("assets/fonts/bricolage-600.ttf") format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"Bricolage Grotesque";src:url("assets/fonts/bricolage-700.ttf") format("truetype");font-weight:700;font-display:swap}
+@font-face{font-family:"Manrope";src:url("assets/fonts/manrope-400.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Manrope";src:url("assets/fonts/manrope-500.ttf") format("truetype");font-weight:500;font-display:swap}
+@font-face{font-family:"Manrope";src:url("assets/fonts/manrope-600.ttf") format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"Manrope";src:url("assets/fonts/manrope-700.ttf") format("truetype");font-weight:700;font-display:swap}
+
+:root{
+  --ink:#17152c;--navy:#1b1837;--navy-2:#111026;--teal:#ff9d6c;--teal-dark:#4a3fc4;
+  --mint:#eeeefe;--cream:#f7f3ed;--white:#fff;--muted:#615f70;--line:#dedbe8;
+  --coral:#d95345;--serif:"Bricolage Grotesque",sans-serif;--sans:"Manrope",sans-serif;
+  --shadow:0 30px 80px rgba(25,20,66,.14)
+}
+body{background:#fbfaf8;color:var(--ink);font-family:var(--sans);letter-spacing:-.012em}
+.hero h1,.section h2,.contact__title h2,.person h3,.service-card h3,.steps h3,.vision__statement p,.contact-note strong,.contact__details p{font-family:var(--serif)}
+.hero h1,.section h2{font-weight:500;letter-spacing:-.062em}.hero h1 em,.section h2 em,.contact__title h2 em{font-style:normal;font-weight:500;letter-spacing:inherit}
+.section h2 em,.appointment__copy h2 em,.intro__copy h2 em,.patient-path h2 em,.facilities h2 em,.leadership h2 em{color:#5448d6}
+.eyebrow{color:#5146ca;font-weight:700}.eyebrow span{height:7px;width:7px;border-radius:50%;background:#ff8c57}.eyebrow--light{color:#ffc0a0}
+.emergency-bar{background:#100f24}.emergency-bar a{color:#ffc0a0}.emergency-bar p span{color:#c9c6dd}
+.nav{border-color:rgba(255,255,255,.18)}.site-header.is-scrolled{background:rgba(251,250,248,.96);box-shadow:0 15px 45px rgba(24,20,63,.11)}
+.brand__mark{border-radius:50%;background:#ff8f5b;box-shadow:0 10px 30px rgba(255,112,59,.34);color:#241933}.brand strong{font-family:var(--serif);font-weight:600;letter-spacing:-.035em}.brand small{font-weight:600}
+.nav__links>a:not(.button)::after{background:#ff8f5b}.button{background:#ff8f5b;color:#21162e;border-radius:100px;box-shadow:0 12px 28px rgba(230,91,37,.22)}.button:hover{background:#ffad83;box-shadow:0 16px 35px rgba(230,91,37,.28)}.button--ghost{background:rgba(255,255,255,.07);color:white;border-color:rgba(255,255,255,.5);box-shadow:none}.button--ghost:hover{background:white;color:#191630}
+.hero__image{filter:saturate(.7) contrast(1.06) brightness(.88)}.hero__overlay{background:linear-gradient(90deg,rgba(17,16,38,.98) 0%,rgba(25,21,57,.9) 43%,rgba(25,21,57,.37) 74%,rgba(25,21,57,.18) 100%),linear-gradient(0deg,rgba(17,16,38,.68),transparent 44%)}
+.hero h1{font-size:clamp(4rem,7.2vw,7.25rem);max-width:1000px}.hero h1 em{color:#ff9d6c}.hero__lead{color:#e4e1ee}.hero__assurances{color:#dedbea}.hero__assurances svg{stroke:#ffad83}.hero__scroll i{background:#ff8f5b}.hero__scroll i::after{color:#20152d}
+.quick-access{box-shadow:0 16px 45px rgba(27,20,76,.08)}.quick-access__grid>a:hover{background:#f0efff}.quick-access__icon,.quick-access b{color:#5146ca}
+.intro{background:linear-gradient(135deg,#f8f4ee,#f0effa)}.intro::before{border-color:rgba(81,70,202,.09);box-shadow:0 0 0 80px rgba(81,70,202,.03),0 0 0 160px rgba(81,70,202,.018)}.intro__visual>img{filter:saturate(.74) contrast(1.035);box-shadow:0 40px 85px rgba(31,25,74,.19)}.year-card{background:linear-gradient(145deg,#292451,#17142f);box-shadow:0 25px 50px rgba(23,20,47,.25)}.year-card span{font-family:var(--serif);font-weight:600;color:#ff9d6c}.year-card strong{color:#cac6e7}.values span{color:#5146ca;font-family:var(--serif);font-weight:600}.values{border-color:#d6d2e1}.values>div{border-color:#d6d2e1}
+.services{background:radial-gradient(circle at 85% 10%,rgba(123,106,255,.18),transparent 30%),linear-gradient(145deg,#211d48,#111026)}.services .section h2 em,.services h2 em{color:#ff9d6c}.service-grid{gap:14px}.service-card{background:rgba(29,25,65,.7);border-color:rgba(255,255,255,.1);border-radius:18px}.service-card:hover{background:#2a245c;border-color:rgba(255,157,108,.34);box-shadow:0 24px 48px rgba(8,6,26,.25)}.service-card--featured{background:linear-gradient(145deg,#ffb48f,#ff8f5b);color:#21172f}.service-card--featured:hover{background:linear-gradient(145deg,#ffc5a8,#ff9c6d)}.service-card p{color:#bbb8cf}.service-card--featured p,.service-card--featured a,.service-card--featured>span{color:#21172f}.service-icon,.service-card a{color:#ffae86}.service-card h3{font-weight:500;letter-spacing:-.035em}.service-card>span{color:#b7b2d1}
+.patient-path{background:linear-gradient(120deg,#efefff,#e8e5fb)}.steps li{border-color:#5146ca}.steps li>span{color:#4036b6;border-color:#aaa4e0;background:rgba(255,255,255,.58);font-family:var(--serif);font-weight:600}.steps h3{font-weight:600;letter-spacing:-.035em}
+.facilities{background:#fcfbf9}.gallery figure,.gallery button{border-radius:16px}.gallery img{filter:saturate(.72) contrast(1.07) sepia(.03)}.gallery button::after{background:linear-gradient(0deg,rgba(20,16,51,.55),transparent 48%)}.gallery span{background:rgba(24,20,57,.88);border-radius:100px;padding-inline:16px}
+.leadership{background:linear-gradient(180deg,#f7f2eb,#eeecf5)}.person__image{border-radius:18px;background:#e0deea;box-shadow:0 24px 50px rgba(27,22,68,.12)}.person img{filter:saturate(.7) contrast(1.035)}.person:hover img{filter:saturate(.9) contrast(1.02)}.person p{color:#5146ca}.person h3{font-weight:600;letter-spacing:-.045em}
+.vision{background:radial-gradient(circle at 10% 100%,rgba(255,143,91,.15),transparent 31%),linear-gradient(135deg,#201c47,#111026)}.vision__statement{border-color:rgba(255,255,255,.15);background:rgba(255,255,255,.035);border-radius:20px}.vision__statement>span{color:#ff9d6c}.vision__statement p{font-weight:500;letter-spacing:-.04em}.vision__copy h2 em{color:#ff9d6c}.text-link{color:#ffc0a0}
+.appointment{background:linear-gradient(125deg,#ecebfd,#f8f0ea)}.contact-note{border-color:#e45f48}.appointment-form{border-radius:20px;border-color:rgba(81,70,202,.1);box-shadow:0 32px 75px rgba(39,30,94,.14)}.field input,.field select,.field textarea{border-radius:10px;border-color:#d2cede;background:#fdfcfa}.field input:focus,.field select:focus,.field textarea:focus{border-color:#5146ca;box-shadow:0 0 0 4px rgba(81,70,202,.12)}.consent input{accent-color:#5146ca}.form-status{color:#4036b6}
+.contact{background:linear-gradient(125deg,#292451,#15122b)}.contact__title h2 em{color:#ff9d6c}.contact__details small{color:#ffb793}.footer{background:#0d0c20;color:#bdb9cc}.footer__links a:hover{color:#ffad83}
+.lightbox::backdrop{background:rgba(12,10,31,.92)}.lightbox button{background:rgba(28,23,65,.88)}
+@media(max-width:960px){.nav__links{background:#17142f}.nav__links>a:not(.button){font-family:var(--serif);font-weight:500}}
+@media(max-width:650px){.hero h1{font-size:3.55rem;line-height:.9}.section h2{font-size:2.85rem;letter-spacing:-.055em}.service-card{border-radius:15px}.gallery figure,.gallery button,.person__image,.appointment-form{border-radius:14px}.contact__title h2{font-size:3.15rem}}

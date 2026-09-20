@@ -24,6 +24,14 @@ if (!/^[^\s<>@]+@[^\s<>@]+\.[^\s<>@]+$/.test(config.email)) throw new Error('Ent
 for (const item of ['assets', 'styles.css', 'app.js', '404.html']) {
   await cp(path.join(root, item), path.join(output, item), { recursive: true });
 }
+
+// Publish the Kenet hospital review as an isolated static route.
+const hospitalRoot = path.join(root, 'kenet-hospital-website');
+const hospitalOutput = path.join(output, 'kenet-hospital-website');
+await mkdir(hospitalOutput);
+for (const item of ['assets', 'index.html', 'styles.css', 'design-system.css', 'brand-expression.css', 'app.js']) {
+  await cp(path.join(hospitalRoot, item), path.join(hospitalOutput, item), { recursive: true });
+}
 let html = await readFile(path.join(root, 'index.html'), 'utf8');
 html = html.replaceAll('https://enicrowndav.github.io/', siteUrl);
 const escapeHTML = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
@@ -39,7 +47,7 @@ if (config.cvPath) {
 await writeFile(path.join(output, 'index.html'), html);
 await writeFile(path.join(output, '.nojekyll'), '');
 await writeFile(path.join(output, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${siteUrl}sitemap.xml\n`);
-await writeFile(path.join(output, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${escapeHTML(siteUrl)}</loc></url></urlset>\n`);
+await writeFile(path.join(output, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${escapeHTML(siteUrl)}</loc></url><url><loc>${escapeHTML(`${siteUrl}kenet-hospital-website/`)}</loc></url></urlset>\n`);
 await writeFile(path.join(output, '404.html'), (await readFile(path.join(output, '404.html'), 'utf8')).replace('https://enicrowndav.github.io/', siteUrl));
 if (config.customDomain) await writeFile(path.join(output, 'CNAME'), `${config.customDomain}\n`);
 console.log(`Built portfolio in ${output}\nCanonical URL: ${siteUrl}`);
