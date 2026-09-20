@@ -59,7 +59,7 @@ form?.addEventListener('submit', (event) => {
     `Message: ${data.get('message') || 'No additional message'}`
   ].join('\n');
   navigator.clipboard?.writeText(request).catch(() => {});
-  if (formStatus) formStatus.textContent = 'Your request has been prepared and copied. Please provide it directly to the hospital reception team.';
+  if (formStatus) formStatus.innerHTML = 'Your request has been prepared and copied. Call <a href="tel:+2348148335718">0814 833 5718</a> to complete your booking.';
 });
 
 document.querySelector('[data-year]').textContent = new Date().getFullYear();

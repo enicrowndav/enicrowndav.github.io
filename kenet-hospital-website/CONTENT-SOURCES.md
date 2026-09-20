@@ -16,10 +16,13 @@ The document supports:
 - Vision, mission and multidisciplinary staffing statements shown on the website
 - Directors: Dr Kayode A. Adeniran, Paediatrician; Dr Babatude Oyefara, Obstetrician and Gynaecologist; Mrs Ajiri Uloho, Tax Consultant
 
+The hospital address and telephone number were supplied directly by the website owner on 20 September 2026:
+
+- No. 14 Nwaezeapu Street, Off Nnebisi Road, Asaba, Delta State, Nigeria
+- 08148335718
+
 ## Details requiring confirmation before publication
 
-- Official street address and map pin
-- Public phone and WhatsApp numbers
 - Public email address
 - General outpatient and specialist clinic hours
 - Appointment handling workflow
