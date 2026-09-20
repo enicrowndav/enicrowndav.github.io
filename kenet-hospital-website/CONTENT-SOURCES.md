@@ -32,3 +32,7 @@ The hospital address and telephone number were supplied directly by the website 
 - Consent to publish each director's photograph and title
 
 No unsupported patient outcomes, awards, accreditations, bed counts, staff counts or named HMO partnerships were added.
+
+## Illustrative imagery
+
+The consultation and clinical-equipment images were generated specifically for the website on 20 September 2026. They depict synthetic Black Nigerian clinicians and patients and are visibly identified as illustrative. They are not photographs of real Kenet Group staff, patients or facilities.
