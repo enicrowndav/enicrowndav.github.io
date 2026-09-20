@@ -59,7 +59,7 @@ form?.addEventListener('submit', (event) => {
     `Message: ${data.get('message') || 'No additional message'}`
   ].join('\n');
   navigator.clipboard?.writeText(request).catch(() => {});
-  if (formStatus) formStatus.textContent = 'Your request has been prepared and copied. The hospital’s contact channel must be added before this website goes live.';
+  if (formStatus) formStatus.textContent = 'Your request has been prepared and copied. Please provide it directly to the hospital reception team.';
 });
 
 document.querySelector('[data-year]').textContent = new Date().getFullYear();
